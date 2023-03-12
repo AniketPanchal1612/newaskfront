@@ -1,0 +1,24 @@
+#create_button {
+    position: relative;
+  }
+  
+  #create_button .loaderr {
+    position: absolute;
+    top: 18%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-top-color: #000;
+    animation: loader 0.8s ease-in-out infinite;
+  }
+  @keyframes loader {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

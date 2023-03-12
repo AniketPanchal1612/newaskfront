@@ -1,0 +1,66 @@
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+#delete_cart_item {
+    color: red;
+    background: white;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+  }
+  #card_item_price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black !important;
+  }
+
+  #order_summary {
+    border: 1px solid #e3e3e3;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+  }
+  
+  .order-summary-values {
+    float: right;
+    font-weight: bold;
+  }
+#call_btn{
+  font-size: .8rem;
+  padding: 5px;
+  background: var(--primary-color);
+  color: #fff;
+}
+  #shipping_btn,#checkout_btn,#pay_btn{
+    font-size: 1.2rem;
+    padding: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    /* border-radius: %; */
+}
+#shipping_btn:hover,#checkout_btn:hover,#pay_btn:hover{
+    /* background-color: #fa9c23; */
+    /* color: white; */
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+  }
+
+@media only screen and (max-width:576px){
+
+    #checks,
+    .triangle2-active,
+    .active-step,
+    .triangle-active,
+    .triangle2-incomplete,
+    .incomplete,
+    .triangle-incomplete
+    {
+      /* width: 20%; */
+      display: none;
+      /* background-color: red; */
+    }
+}
+

@@ -1,0 +1,64 @@
+#register_button,
+#update-btn,
+#update-btn,
+#forgot_password_button,
+#set_password{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color:#fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 5px;
+    /* margin-right: 10px; */
+    /* height: 60px; */
+}
+
+#register_button:hover,
+#update-btn:hover,
+#update-btn:hover,
+#forgot_password_button:hover,
+#set_password:hover{
+    color:black;
+    border: 1px solid black;
+    background: white;
+    text-decoration: none;
+}
+#register_button {
+    position: relative;
+  }
+  
+  #register_button .loaderr {
+    position: absolute;
+    top: 18%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-top-color: #000;
+    animation: loader 0.8s ease-in-out infinite;
+  }
+  @keyframes loader {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+@media only screen and (max-width:576px){
+    .wrapper{
+        /* width: 100%; */
+        font-size: 1rem;
+    }
+    .form-control{
+        font-size: 0.8rem;
+    }
+    .avatar__div{
+        font-size: 0.5rem;
+    }
+}

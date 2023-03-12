@@ -1,0 +1,23 @@
+/* .input-group{
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.form{
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+     margin-left: auto; 
+} 
+
+*/
+
+#search_btn {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+#search_field {
+    height: 2.4rem;
+    padding: 1rem;
+}
