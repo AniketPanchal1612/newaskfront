@@ -22,7 +22,7 @@ const NewProduct = ({ history }) => {
     const [images, setImages] = useState([]);
     const [imagesPreview, setImagesPreview] = useState([]);
     const categories = [
-        'Select Category','Bookcases and shelves','Dining Tables','Shoes Racks', 'Sofas', 'Chairs', 'Single Beds', 'Double Beds', 'Study Tables', 'TV & Media Units', 'Kitchen & Decor', 'Dining Sets', 'Wardrobes', 'Outdoors'
+        'Select Category','Bookcases and shelves','Dining Tables','Shoes Racks', 'Sofas', 'Chairs', 'Single Beds', 'Double Beds', 'Study Tables', 'TV and Media Units', 'Kitchen and Decor', 'Dining Sets', 'Wardrobes', 'Outdoors'
     ]
     const alert = useAlert()
     const dispatch = useDispatch()

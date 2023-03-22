@@ -66,20 +66,20 @@ const Login = ({ history, location }) => {
 
                 <Link to='/password/forgot' className="float-right mb-4">Forgot Password?</Link>
 
-                {/* {loading ? */}
-                  {/* <button
+                 {loading ? 
+                   <button
                     id="login_button"
                     type="submit"
                     // style={{height:"50px"}}
                     className="btn btn-block py-4"
                     disabled={loading ? true : false}
 
-                  > */}
+                  > 
                     {/* <Loader /> */}
-                    {/* <spa style={{fontSize:"10px", disabled:true}}>Please Wait...</spa> */}
-                    {/* <div className='loaderr' ></div>
+                     {/* <spa style={{fontSize:"10px", disabled:true}}>Please Wait...</spa>  */}
+                     <div className='loaderr' ></div>
 
-                  </button> : */}
+                  </button> : 
                   <button
                     id="login_button"
                     type="submit"
@@ -87,7 +87,7 @@ const Login = ({ history, location }) => {
                   >
                     LOGIN
                   </button>
-                {/* } */}
+                 } 
 
                 <Link to="/register" className="float-right mt-3">New User?</Link>
               </form>

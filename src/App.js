@@ -33,6 +33,7 @@ import UsersList from "./components/admin/UsersList";
 import UpdateUser from "./components/admin/UpdateUser";
 import ProductReviews from "./components/admin/ProductReviews";
 import About from "./components/About";
+import ScrollTop from "./components/ScrollTop";
 // import ListReview from "./components/review/ListReview";
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
   return <Router>
 
     <Header />
+    <ScrollTop />
     {/* <div className="container container-fluid"> */}
 
     <Route path='/' component={Home} exact />

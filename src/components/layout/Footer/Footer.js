@@ -89,7 +89,7 @@ const Footer = () => {
                   
                   <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
                   <span><i className='ri-mail-line'></i></span>
-                  <p className='mb-2'> askfurniture@gmail.com</p>                  
+                  <p className='mb-2'> askfurniture1207@gmail.com</p>                  
                   
                   
                 </ListGroupItem>

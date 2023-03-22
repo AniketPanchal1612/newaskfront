@@ -81,9 +81,8 @@ const Header = () => {
                   {/* Home */}
                 </li>
                 <li className='nav__item'>
-                  <a href='/shop'>Shop</a>
-                  {/* <Link to='/shop'>Shop</Link> */}
-                  {/* Shop */}
+                  {/* <a href='/shop'>Shop</a> */}
+                  <Link to='/shop'>Shop</Link>
                 </li>
                 <li className='nav__item'>
                   <Link to='/cart'>Cart</Link>
@@ -154,7 +153,7 @@ const Header = () => {
                 </div>
 
               ) :
-                <Link to='/login' className="btn ml-4" id="login_btn">Login</Link >
+                !loading && <Link to='/login' className="btn ml-4" id="login_btn">Login</Link >
               }
 
               {/* <span><motion.img whileTap={{ scale: 1.1 }} src={userIcon} alt="" /></span> */}

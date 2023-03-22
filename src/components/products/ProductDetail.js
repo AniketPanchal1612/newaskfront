@@ -11,7 +11,7 @@ import { NEW_REVIEW_RESET } from '../../constants/ProductConstant'
 import ListReview from '../review/ListReview'
 import Product from './Product'
 import { Col, Container, Row } from 'reactstrap'
-const phoneNumber = "tel:+917575024635";
+const phoneNumber = "tel:+919825724635";
 // import {FiPhoneCall} from 'react-icons'
 // import { FiPhoneCall } from "@react-icons/all-files/fi/FiPhoneCall";
 
@@ -135,7 +135,7 @@ const ProductDetail = ({ match }) => {
                                 <p id="product_id">Product # {product._id}</p>
 
                                 <hr />
-                                <p>For any query or know more details about Product</p>
+                                <p>For any query or know exact price or more details about Product Dimensions</p>
                                 <a href={phoneNumber} >
                                     {/* <FiPhoneCall /> */}
                                     <button id='call_btn'>Call us now</button>
@@ -168,21 +168,8 @@ const ProductDetail = ({ match }) => {
 
                                 <hr />
 
-                                <h4 className="mt-2 mb-2">Description:</h4>
-                                <p>{product.description}</p>
-                                <hr />
-                                <p id="product_seller mb-3"><span className='mr-5'>Sold by: <strong className='seller'>{product.seller}</strong></span> Category: <strong className='seller'>{product.category}</strong></p>
-                                <hr />
 
-                                {/* <h5 className="mt-3 mb-3">Material :   <span>{product.material}</span></h5>
                                 
-                                <h5 className="mt-3 mb-3">Dimensions  : <span>{product.dimensions}</span></h5>
-                                
-                                <h5 className="mt-3 mb-3">Color  : <span>{product.color}</span> </h5>
-                                
-                                <h5 className="mt-3 mb-3">Storage  : <span>{product.storage}</span></h5>
-                            
-                                <h5 className="mt-3 mb-3">Warrenty  : <span>{product.warrenty}</span></h5> */}
                                 <div class="product-info">
                                     <h5>Material:  <span style={{fontWeight:'400'}}>{product.material}</span></h5>
                                    
@@ -204,9 +191,15 @@ const ProductDetail = ({ match }) => {
                                 </div>
 
                                 <div class="product-info">
-                                    <h5>Warrenty  :  <span style={{fontWeight:'400'}}>{product.warrenty}</span></h5>
+                                    <h5>Warrenty  :  <span style={{fontWeight:'400'}}><strong>{product.warrenty}</strong></span></h5>
                                    
                                 </div>
+                                <hr />
+                                <h4 className="mt-2 mb-2">Description:</h4>
+                                <p>{product.description}</p>
+                
+                                <hr />
+                                <p id="product_seller mb-3"><span className='mr-5'>Sold by: <strong className='seller'>{product.seller}</strong></span> Category: <strong className='seller'>{product.category}</strong></p>
 
 
 

@@ -15,6 +15,7 @@ import { Route } from 'react-router-dom'
 import Search from './layout/Search'
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
+const phoneNumber = "tel:+919825724635";
 
 
 const { createSliderWithTooltip } = Slider;
@@ -27,7 +28,7 @@ const Shop = ({ match }) => {
     const [category, setCategory] = useState('');
 
     const categories = [
-        'Bookcases and shelves', 'Dining Tables', 'Shoes Racks', 'Sofas', 'Chairs', 'Single Beds', 'Double Beds', 'Study Tables', 'TV & Media Units', 'Kitchen & Decor', 'Dining Sets', 'Wardrobes', 'Outdoors'
+        'Sofas', 'Chairs', 'Single Beds', 'Double Beds', 'Study Tables', 'TV and Media Units', 'Wardrobes', 'Dining Sets', 'Outdoors', 'Kitchen and Decor', 'Bookcases and shelves', 'Dining Tables', 'Shoes Racks'
     ]
 
     const year = new Date().getFullYear();
@@ -104,11 +105,27 @@ const Shop = ({ match }) => {
                             <div className="row">
 
 
-                                {products && products.map(product => (
+                                {/* {products && products.map(product => (
 
                                     <Product key={product._id} product={product} />
                                 ))
-                                }
+                                } */}
+                                 {products && products.length > 0 ? (
+                                    <section id="products" className="container">
+                                        <div className="row">
+                                            {products.map((product) => (
+                                                <Product key={product._id} product={product} />
+                                            ))}
+                                        </div>
+                                    </section>
+                                ) : (
+                                    <div className="container">
+                                        <h2>For order this Products Contact us: <a style={{color:'blue'}} href={phoneNumber} >
+                                    {/* <FiPhoneCall /> */}
+                                    Call us now
+                                </a></h2>
+                                    </div>
+                                )}
 
                             </div>
                         </section>
@@ -135,8 +152,8 @@ const Shop = ({ match }) => {
 
                         }
                     </Fragment>
-                )
-            }
+                 )
+            } 
 
         </Fragment>
     )

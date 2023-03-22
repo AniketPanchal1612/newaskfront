@@ -24,7 +24,7 @@ const UpdateProduct = ({match,history}) => {
     const [imagesPreview, setImagesPreview] = useState([]);
 
     const categories = [
-        'Select Category','Sofas','Bookcases and shelves','Dining Tables','Shoes Racks', 'Chairs', 'Single Beds','Folding ', 'Double Beds', 'Study Tables', 'TV & Media Units', 'Kitchen & Decor', 'Dining Sets', 'Wardrobes', 'Outdoors'
+        'Select Category','Sofas','Bookcases and shelves','Dining Tables','Shoes Racks', 'Chairs', 'Single Beds','Folding ', 'Double Beds', 'Study Tables', 'TV and Media Units', 'Kitchen and Decor', 'Dining Sets', 'Wardrobes', 'Outdoors'
     ]
 
     const alert = useAlert()

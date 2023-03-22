@@ -11,7 +11,7 @@ const ListOrder = () => {
     const dispatch = useDispatch();
 
     const{loading, error, orders} = useSelector(state=>state.myOrders);
-
+    console.log(orders)
     useEffect(()=>{
         dispatch(myOrders())
         if(error){
@@ -73,7 +73,7 @@ const ListOrder = () => {
 
     <h1 className='mt-5 ml-5 mb-3'>My Orders</h1>
 
-    {/* {loading ? <Loader />:( */}
+    {loading ? <Loader />:(
       <MDBDataTable
       data={setOrders()}
       className='px-5'
@@ -83,7 +83,7 @@ const ListOrder = () => {
       responsive small
       
       />
-    {/* )} */}
+     )} 
   </Fragment>
   )
 }
