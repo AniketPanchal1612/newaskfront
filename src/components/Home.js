@@ -68,8 +68,9 @@ const Home = ({ match }) => {
                                 <h2>Make Your Interior More Minimalist & Modern</h2>
                                 <p>Your home should be a story of who you are, and be a collection of what you love </p>
                                 <p style={{ fontWeight: '500' }}>Explore and Order Quality Products with fully customize according to your choice </p>
-                                <Link to='/shop' className='shop__btn'>SHOP NOW</Link>
-                                <a href={phoneNumber} className='shop__btn ml-2' style={{ color: 'white' }}>Call Now</a>
+                                <Link to='/shop' className='shop__btn ml-2'>SHOP NOW</Link>
+                                
+                                <a href={phoneNumber} className='shop__btn call__now ml-2' style={{ color: 'white' }}>Call Now</a>
                                 {/* <button className='shop__btn'>SHOP NOW</button> */}
 
                                 {/* <Link to='/shop' className='shop__btn'>CALL NOW</Link> */}

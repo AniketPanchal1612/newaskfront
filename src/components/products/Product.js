@@ -11,6 +11,7 @@ const Product = ({ product }) => {
                     <Link to={`/product/${product._id}`}>
 
                         <motion.img
+                            id="product__img"
                             whileHover={{ scale: 1.1 }}
                             className="card-img-top mx-auto"
                             src={product.images[0].url}
