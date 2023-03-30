@@ -34,12 +34,22 @@ import UpdateUser from "./components/admin/UpdateUser";
 import ProductReviews from "./components/admin/ProductReviews";
 import About from "./components/About";
 import ScrollTop from "./components/ScrollTop";
+import { LOAD_USER_SUCCESS } from "./constants/AuthConstant";
+import { useDispatch } from "react-redux";
 // import ListReview from "./components/review/ListReview";
 function App() {
-
   useEffect(()=>{
-    store.dispatch(loadUser());
+    
+    // store.dispatch(loadUser());
+    loadUser();
   },[])
+
+  // const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   // Dispatch the loadUser action when the component mounts and on page reload
+  //   dispatch(loadUser());
+  // }, [dispatch]);
   return <Router>
 
     <Header />

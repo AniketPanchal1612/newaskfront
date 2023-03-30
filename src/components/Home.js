@@ -29,7 +29,7 @@ const Home = ({ match }) => {
     const year = new Date().getFullYear();
     const { loading, products, error, productsCount, success, resPerPage, filteredProductCount } = useSelector(state => state.products)
     // const {loading,error,products} = useSelector(state=>state.trendingProducts)
-    console.log(products)
+    // console.log(products)
     const dispatch = useDispatch();
     const alert = useAlert();
 

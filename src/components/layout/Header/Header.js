@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 import { Route, Link } from 'react-router-dom'
 import { useAlert } from 'react-alert'
 import { Row, Container } from 'reactstrap'
-import { logout } from '../../../actions/authAction'
+import { loadUser, logout } from '../../../actions/authAction'
 const nav__link = [
   {
     path: 'home',

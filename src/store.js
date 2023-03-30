@@ -29,14 +29,24 @@ const reducer = combineReducers({
     review: ReviewReducer
 })
 
+// const localStorageMiddleware = (store) => (next) => (action) => {
+//     const result = next(action);
+//     if (action.type === 'LOAD_USER_SUCCESS') {
+//       localStorage.setItem('user', JSON.stringify(action.payload));
+//     }
+//     return result;
+//   };
 let intialState ={
 cart:{
     cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')):[],
-    shippingInfo : JSON.parse(localStorage.getItem('shippingInfo')) ? JSON.parse(localStorage.getItem('shippingInfo')):{}
+    shippingInfo : JSON.parse(localStorage.getItem('shippingInfo')) ? JSON.parse(localStorage.getItem('shippingInfo')):{},
+
 }
 }
 
 const middleware =  [thunk];
+
+// const store = createStore(reducer,intialState,composeWithDevTools(applyMiddleware(...middleware)))
 
 const store = createStore(reducer,intialState,composeWithDevTools(applyMiddleware(...middleware)))
 
