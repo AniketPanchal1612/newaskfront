@@ -176,6 +176,9 @@ export const loadUser = () => async (dispatch) => {
         console.log("object")
        
         const token = Cookies.get('token');
+        if(!token){
+            throw Error("User not Logged in");
+        }
         const config = {
             headers: {
                 'Content-Type': 'application/json',
@@ -198,7 +201,8 @@ export const loadUser = () => async (dispatch) => {
     } catch (error) {
         dispatch({
             type: LOAD_USER_FAIL,
-            payload: error.response.data.mesaage
+            // payload: error.response.data.mesaage
+            payload: error.response? error.response.data.mesaage: error.message
         })
     }
 }

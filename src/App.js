@@ -40,8 +40,8 @@ import { useDispatch } from "react-redux";
 function App() {
   useEffect(()=>{
     
-    // store.dispatch(loadUser());
-    loadUser();
+    store.dispatch(loadUser());
+    // loadUser();
   },[])
 
   // const dispatch = useDispatch();
